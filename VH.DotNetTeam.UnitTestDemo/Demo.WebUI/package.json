@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^9.15.0",
+    "gulp": "^5.0.0",
+    "gulp-less": "^5.0.0",
+    "gulp-watch": "^4.3.11"
+  }
+}

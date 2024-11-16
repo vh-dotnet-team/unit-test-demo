@@ -1,0 +1,24 @@
+﻿@bg-color: #f4f4f4;
+@container-bg: #ffffff;
+@primary-color: #5BD1D7;
+@white: #FFFFFF;
+
+body {
+    background-color: @bg-color;
+}
+
+.container {
+    background-color: @container-bg;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-vh {
+    background-color: @primary-color;
+    color: @white;
+
+    &:hover {
+        color: @white;
+        background: darken(@primary-color, 10%);
+    }
+}
