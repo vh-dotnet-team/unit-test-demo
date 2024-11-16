@@ -63,4 +63,15 @@ public class HealthcareController : Controller
         TempData["Message"] = "Process reset to Check-In.";
         return RedirectToAction("Index");
     }
+
+    /// <summary>
+    /// Displays the full journey of the healthcare process.
+    /// </summary>
+    /// <returns></returns>
+    [HttpGet]
+    public IActionResult Journey()
+    {
+        var journey = _processService.GetFullProcessJourney();
+        return PartialView("_Journey", journey);
+    }
 }

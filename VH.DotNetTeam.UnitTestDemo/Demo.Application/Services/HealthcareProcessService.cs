@@ -1,6 +1,7 @@
 ﻿using Demo.Application.Enums;
 using Demo.Application.Interfaces;
 using Demo.Application.Processes;
+using System.Collections;
 
 namespace Demo.Application.Services;
 
@@ -32,5 +33,11 @@ public class HealthcareProcessService : IHealthcareProcessService
     public void ResetProcess()
     {
         _process.ResetProcess();
+    }
+
+    /// <inheritdoc/>
+    public IEnumerable GetFullProcessJourney()
+    {
+        return _process.GetFullProcessJourney();
     }
 }

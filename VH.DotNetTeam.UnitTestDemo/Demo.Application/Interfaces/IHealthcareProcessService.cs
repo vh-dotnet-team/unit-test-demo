@@ -1,4 +1,5 @@
 ﻿using Demo.Application.Enums;
+using System.Collections;
 
 namespace Demo.Application.Interfaces;
 
@@ -29,4 +30,10 @@ public interface IHealthcareProcessService
     /// Resets the healthcare process to the initial stage.
     /// </summary>
     void ResetProcess();
+
+    /// <summary>
+    /// Gets the full journey of the healthcare process.
+    /// </summary>
+    /// <returns></returns>
+    IEnumerable GetFullProcessJourney();
 }

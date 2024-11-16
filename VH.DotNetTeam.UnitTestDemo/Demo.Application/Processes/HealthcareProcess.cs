@@ -1,4 +1,5 @@
 ﻿using Demo.Application.Enums;
+using System.Collections;
 
 namespace Demo.Application.Processes;
 
@@ -39,5 +40,14 @@ public class HealthcareProcess
     public void ResetProcess()
     {
         CurrentStage = HealthcareStage.CheckIn;
+    }
+
+    /// <summary>
+    /// Gets the full journey of the healthcare process.
+    /// </summary>
+    public IEnumerable GetFullProcessJourney()
+    {
+        // Return all stages in order.
+        return Enum.GetValues(typeof(HealthcareStage));
     }
 }

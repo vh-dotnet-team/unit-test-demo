@@ -1,7 +1,7 @@
 ﻿@model Demo.Application.Enums.HealthcareStage
 
 <div class="container">
-    <h1>Healthcare Process</h1>
+    <h2>Healthcare Process</h2>
     <div id="stage-display">Current Stage: @Model</div>
 
     @if (TempData["Error"] != null)
@@ -13,13 +13,22 @@
         <div class="success-message">@TempData["Message"]</div>
     }
 
-    <div class="d-flex flex-row gap-3 justify-content-center mt-2">
+    <div class="d-flex flex-row gap-3 justify-content-center mt-3">
         <form method="post" asp-action="MoveNext">
             <button class="btn  btn-vh" type="submit">Move to Next Stage</button>
         </form>
 
+        <!-- Button to open modal -->
+        <button id="journey-btn" class="btn btn-secondary">View Full Journey</button>
+
         <form method="post" asp-action="Reset">
             <button class="btn btn-danger" type="submit">Reset Process</button>
         </form>
+    </div>
+    <div class="d-flex justify-content-center mt-2">
+        
+
+        <!-- Load the Journey modal here -->
+        <div id="journey-container"></div>
     </div>
 </div>
