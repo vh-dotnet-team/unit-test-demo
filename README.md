@@ -4,17 +4,17 @@
 
 This project demonstrates unit testing for a healthcare patient flow simulation using NUnit in Visual Studio. The `HealthcareProcess` class models the sequence of stages a patient goes through in a healthcare facility.
 
-### Solution Structure
-
-- **`src` Folder**: Contains the main project (`MainProject`) with the `HealthcareProcess` class.
-- **`tests` Folder**: Contains the NUnit test project (`MainProject.UnitTests`) with tests for the `HealthcareProcess` class.
-
 ### Dependencies
 - **.NET 8**: .NET Core is a cross-platform version of .NET for building websites, services, and console apps.
 - **Visual Studio 2022**: Integrated development environment for .NET development.
 - **Node.js**: JavaScript runtime for running npm commands.
 - **NUnit**: Testing framework for writing unit tests in .NET.
 - **FluentAssertions**: Provides a fluent syntax for asserting the results of unit tests.
+
+### Solution Structure
+
+- **`src` Folder**: Contains the main project (`MainProject`) with the `HealthcareProcess` class.
+- **`tests` Folder**: Contains the NUnit test project (`MainProject.UnitTests`) with tests for the `HealthcareProcess` class.
 
 ### HealthcareProcess Class
 Healthcare process class is a simple class that simulates the stages a patient goes through in a healthcare facility. The class has the following properties and methods:
