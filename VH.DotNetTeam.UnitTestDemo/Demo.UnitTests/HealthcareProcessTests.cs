@@ -1,3 +1,5 @@
+using Demo.Application.Processes;
+
 namespace Demo.UnitTests;
 
 [TestFixture]
